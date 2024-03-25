@@ -1,0 +1,23 @@
+@charset "UFT-8";
+
+body{
+    background-color: rgb(200, 181, 154);
+    font-family: sans-serif;
+}
+h1{
+     color: rgb(138, 94, 29);
+     font-size: 2em;
+}
+h1#principal{
+    text-align: center;
+}
+.intermediario{
+    text-align: right;
+}
+.basico{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+h2{
+    color: rgb(87, 59, 24);
+}
+p{
+    text-align: justify;
+}

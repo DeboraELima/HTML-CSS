@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Ex010/gatofavicon.io.png" type="image/x-icon">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <H1>Imagem Dinâmica</H1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/ImagemP.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/ImagemM.png" type="image/png">
+        <img src="Imagens/ImagemG.png" alt="Imagem flexível">
+    </picture>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudio em HTML5.</p>
+    <audio src="midia/Putting On The Ritz - Freedom Trail Studio.mp3" controls autoplay></audio>
+    <br>
+    <audio preload="metadata" autoplay controls> 
+        <source src="midia/Putting On The Ritz - Freedom Trail Studio.mp3" type="audio/mpeg">
+        <source src="midia/Putting On The Ritz - Freedom Trail Studio.mp3" type="audio/ogg">
+        <source src="midia/Putting On The Ritz - Freedom Trail Studio.mp3" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/Putting On The Ritz - Freedom Trail Studio.mp3"></a></p>
+    </audio>
+    <h1>Vídeos em HTML5</h1>
+    <h2>Inserindo vídeos hospedados localmente</h2>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+    <video src="Vídeo/meuvideo.mp4" width="500px" controls></video>
+    <br>
+    <video width="500px" poster="Imagens/Captura de Tela 2024-03-19 às 17.23.44.png" controls >
+        <source src="Vídeo/meuvideo.mp4" type="video/mp4">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+    </video>
+    <h2>Inserindo vídeo do YouTube</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y?si=sfiK9oXWVPPuVxaY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+</html>
