@@ -1,0 +1,89 @@
+@charset "UFT-8";
+
+@font-face {
+    font-family: 'cordel';
+    src: url(desafio012/fonte-cordel/cordel.otf) format(opentype);
+}
+
+:root{
+    --cor01:#F2C84B;
+    --cor2:#D9B95B;
+    --cor03:#D9B26A;
+    --cor04:#F2DDB6;
+    --cor05:#0D0D0D;
+
+    --fonte-padrao: monospace;
+    --fonte-destaque: 'cordel', sans-serif;
+}
+
+body{
+    font-family: var(--fonte-padrao);
+}
+
+header{
+    background-color: var(--cor01);
+    margin: -10px;
+    padding: 10px;
+}
+header>h1{
+    font-family: var(--fonte-destaque);
+    text-align: center;
+    font-size: 4em;
+}
+header>p{
+    font-family: var(--fonte-destaque);
+    text-align: center;
+    margin: auto;
+}
+header>p>a{
+    text-decoration: none;
+    color: var(--cor04);
+    background-color: rgba(0, 0, 0, 0.063);
+    padding: 5px;
+    border-radius: 10px;
+}
+header>p>a:hover{
+    background-color: var(--cor05);
+    color: var(--cor01);
+}
+p{
+    max-width: 500px;
+    padding: 20px;
+    font-size: 2em;
+}
+main>section>article.fundo#f1{
+    background-color: var(--cor2);
+    background: var(--cor03) url(desafio012/imagens/background001.jpg) center center no-repeat fixed;
+    background-size: cover;
+    max-width: 2500px;
+    margin: -8px;
+    color: white;
+}
+main>section>article>p.verso#v2{
+    padding: 22px;
+}
+main>section>article.fundo#f2{
+    background-color: var(--cor2);
+    background: var(--cor03) url(desafio012/imagens/background002.jpg) center center no-repeat fixed;
+    background-size: cover;
+    max-width: 2500px;
+    margin: -8px;
+    padding: 22px;
+    color: white;
+}
+main>section>article>p.verso#v5{
+    color: var(white);
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.555);
+} 
+footer{
+    background-color: var(--cor01);
+    margin: -30px -10px -30px -30px;
+}
+footer>p{
+    color: var(--cor05);
+    margin: auto;
+    font-size: 0.9em;
+    max-width: 700px;
+    text-align: center;
+}
