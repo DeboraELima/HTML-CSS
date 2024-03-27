@@ -68,12 +68,24 @@ main>section.imagem{
     color: white;
     background-color: var(--cor03);
 }
+main>section.normal>p{
+    padding-bottom: 2em;
+}
 main>section.imagem>p{
     background-color: rgba(0, 0, 0, 0.363);
     display: inline-block;
     padding: 5px;
+    text-shadow: 1px 1px 0px black;
 }
-main>section.normal>p{
+main>section#img01{
+    background: var(--cor03) url(../imagens/background001.jpg) right center no-repeat fixed;
+    background-size: cover;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.441);
+}
+main>section#img02{
+    background: var(--cor03) url(../imagens/background002.jpg) right center no-repeat fixed;
+    background-size: cover;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.441);
 }
 footer{
     background-color: var(--cor01);
