@@ -1,5 +1,11 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: 'Cordel';
+    src: url(../cordel.otf) format('opentype');
+}
+
+
 :root{
     --cor01:#F2C84B;
     --cor2:#D9B95B;
@@ -7,8 +13,8 @@
     --cor04:#F2DDB6;
     --cor05:#0D0D0D;
 
-    --fonte-padrao: monospace;
-    --fonte-destaque: 'cordel', sans-serif;
+    --fonte-destaque: 'Cordel', sans-serif;
+    --fonte-rodape: monospace;
 }
 
 *{
@@ -25,19 +31,22 @@ header{
     background-color: var(--cor01);
     color: var(--cor05);
     text-align: center;
+    font-family: var(--fonte-destaque);
+    font-variant: small-caps;
 }
 header>h1{
     padding-top: 50px;
-    font-variant: small-caps;
+    font-size: 12vh;
 }
 header>p{
     padding-top: 10px;
     padding-bottom: 50px;
-    color: var(--cor04);
+    color: var(--cor03);
+    font-size: 1.5em;
 }
 header>p>a{
     text-decoration: none;
-    color: var(--cor04);
+    color: var(--cor03);
 }
 header>p>a:hover{
     color: var(--cor01);
@@ -46,29 +55,39 @@ header>p>a:hover{
     padding: 5px;
 }
 main{
-    background-color: white;
+    background-color: var(--cor04);
 }
 main>section{
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
-}
-main>section.normal{
-
+    font-size: 4vh;
 }
 main>section.imagem{
     color: white;
     background-color: var(--cor03);
-
 }
 main>section.imagem>p{
     background-color: rgba(0, 0, 0, 0.363);
-    width: 400px;
+    display: inline-block;
+    padding: 5px;
+}
+main>section.normal>p{
 }
 footer{
     background-color: var(--cor01);
     text-align: center;
     color: var(--cor05);
     padding: 10px;
+    font-family: var(--fonte-rodape);
+}
+footer>p>a{
+    text-decoration: none;
+    color: #0D0D0D;
+    font-weight: bold;
+}
+footer>p>a:hover{
+    background-color: var(--cor05);
+    color: var(--cor01);
 }
