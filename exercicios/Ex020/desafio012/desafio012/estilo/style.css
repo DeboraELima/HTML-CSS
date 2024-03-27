@@ -62,7 +62,7 @@ main>section{
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
-    font-size: 4vh;
+    font-size: 3vh;
 }
 main>section.imagem{
     color: white;
@@ -102,4 +102,5 @@ footer>p>a{
 footer>p>a:hover{
     background-color: var(--cor05);
     color: var(--cor01);
+    padding: 2px;
 }
