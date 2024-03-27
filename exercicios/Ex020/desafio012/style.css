@@ -47,7 +47,6 @@ header>p>a:hover{
     color: var(--cor01);
 }
 p{
-    max-width: 500px;
     padding: 20px;
     font-size: 2em;
 }
@@ -75,7 +74,7 @@ main>section>article>p.verso#v5{
     color: var(white);
     padding: 5px;
     background-color: rgba(0, 0, 0, 0.555);
-} 
+    max-width: 500px;} 
 footer{
     background-color: var(--cor01);
     margin: -30px -10px -30px -30px;
